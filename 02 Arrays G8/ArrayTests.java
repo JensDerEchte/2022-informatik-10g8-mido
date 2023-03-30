@@ -1,3 +1,4 @@
+import java.util.Array;
 public class ArrayTests {
     private ArrayGeneratoren generator;
     private ArrayOperationen operationen;
@@ -40,6 +41,11 @@ public class ArrayTests {
         int[] a = {1, 2};
         double mw = operationen.mittelwert(a);
         System.out.println(mw + " <=> 1.5");
+    }
+    
+    public void testePrimzahlen(){
+        int[] pz = new PrimzahlSieb().sieben();
+        System.out.println(Arrays.toString(pz));
     }
 
 }
